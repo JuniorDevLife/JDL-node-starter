@@ -1,5 +1,5 @@
 import assert from 'assert'
-import User from '../src/components/users/userDAL.js'
+import User from '../src/database/models/UserModel.js'
 
 describe("Reading users out of the database", () => {
   let user

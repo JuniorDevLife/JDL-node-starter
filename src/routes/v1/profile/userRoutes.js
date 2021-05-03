@@ -1,6 +1,6 @@
 import express from 'express'
 const router = express.Router()
-import User from './userDAL.js'
+import User from '../../../database/models/UserModel.js'
 
 
 router.get('/:id', async (req, res, next) => {

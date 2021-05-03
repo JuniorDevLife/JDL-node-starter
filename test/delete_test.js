@@ -1,5 +1,5 @@
 import assert from "assert";
-import User from '../src/components/users/userDAL.js'
+import User from '../src/database/models/UserModel.js'
 
 describe('Deleting a user', () => {
   let user

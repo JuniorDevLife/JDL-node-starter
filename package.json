@@ -6,23 +6,26 @@
   "type": "module",
   "scripts": {
     "test": "nodemon --exec mocha -R min",
-    "dev": "nodemon -e js -r dotenv/config ./src/server.js",
-    "start": "node ./src/server.js"
+    "dev": "cross-env NODE_ENV=development nodemon -e js -r dotenv/config ./src/server.js",
+    "start": "cross-env NODE_ENV=production node ./src/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
     "express": "^4.17.1",
+    "express-list-endpoints": "^5.0.0",
     "mongoose": "^5.12.7",
     "query-to-mongo": "^0.10.1",
-    "uuid": "^8.3.2"
+    "uuid": "^8.3.2",
+    "winston": "^3.3.3"
   },
   "devDependencies": {
     "dotenv": "^8.2.0",
-    "express-list-endpoints": "^5.0.0",
     "mocha": "^8.3.2",
     "nodemon": "^2.0.7"
   }
