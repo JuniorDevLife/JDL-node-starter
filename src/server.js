@@ -1,7 +1,9 @@
 import {port} from "./config.js";
 import Logger from "./core/logger.js";
 import app from './app.js'
+import {connectToMongoDB} from "./database/mongo/index.js"
 
-app.listen(port, () => {
-  Logger.info(`server running on port : ${port}`)
+app.listen(port, async() => {
+  Logger.info(`Server running on port : ${port}`)
+  await connectToMongoDB()
 }).on('error', (e) => Logger.error(e))

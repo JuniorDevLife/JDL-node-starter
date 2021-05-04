@@ -36,14 +36,14 @@ export class UnauthorizedError extends Error {
 
 export class NotFoundError extends Error {
   /*404 Not Found
-  The 404 status code, or a Not Found error, means that the user is able to communicate with the server but it is unable to locate the requested file or resource.
-  404 errors can occur in a large variety of situations. If the user is unexpectedly receiving a 404 Not Found error, here are some questions to ask while troubleshooting:
-  Does the link that directed the user to your server resource have a typographical error in it?
-  Did the user type in the wrong URL?
-  Does the file exist in the correct location on the server? Was the resource was moved or deleted on the server?
-  Does the server configuration have the correct document root location?
-  Does the user that owns the web server worker process have privileges to traverse to the directory that the requested file is in? (Hint: directories require read and execute permissions to be accessed)
-  Is the resource being accessed a symbolic link? If so, ensure the web server is configured to follow symbolic links
+    The 404 status code, or a Not Found error, means that the user is able to communicate with the server but it is unable to locate the requested file or resource.
+    404 errors can occur in a large variety of situations. If the user is unexpectedly receiving a 404 Not Found error, here are some questions to ask while troubleshooting:
+    Does the link that directed the user to your server resource have a typographical error in it?
+    Did the user type in the wrong URL?
+    Does the file exist in the correct location on the server? Was the resource was moved or deleted on the server?
+    Does the server configuration have the correct document root location?
+    Does the user that owns the web server worker process have privileges to traverse to the directory that the requested file is in? (Hint: directories require read and execute permissions to be accessed)
+    Is the resource being accessed a symbolic link? If so, ensure the web server is configured to follow symbolic links
    */
   constructor(message) {
     super(message);

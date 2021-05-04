@@ -12,6 +12,8 @@ export const db = {
   password: process.env.DB_USER_PWD || '',
 };
 
+export const mongoURI = process.env.MONGO_URI
+
 export const corsUrlProduction = process.env.CORS_URL_PROD || "";
 export const corsUrlDevelopment = process.env.CORS_URL_DEV || "";
 

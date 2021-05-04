@@ -9,7 +9,7 @@ const router = express.Router()
 // router.use('/', apikey);
 /*-------------------------------------------------------------------------*/
 
-router.use('/profile', userRoutes)
+router.use('/profiles', userRoutes)
 router.use('/todos', todoRoutes)
 
 

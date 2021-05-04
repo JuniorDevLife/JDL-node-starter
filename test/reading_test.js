@@ -1,5 +1,5 @@
 import assert from 'assert'
-import User from '../src/database/models/UserModel.js'
+import User from '../src/database/mongo/models/UserModel.js'
 
 describe("Reading users out of the database", () => {
   let user
