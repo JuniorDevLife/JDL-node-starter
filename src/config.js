@@ -12,7 +12,8 @@ export const db = {
   password: process.env.DB_USER_PWD || '',
 };
 
-export const corsUrl = process.env.CORS_URL || "";
+export const corsUrlProduction = process.env.CORS_URL_PROD || "";
+export const corsUrlDevelopment = process.env.CORS_URL_DEV || "";
 
 // export const tokenInfo = {
 //   accessTokenValidityDays: parseInt(process.env.ACCESS_TOKEN_VALIDITY_SEC || '0'),
