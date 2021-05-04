@@ -1,23 +1,23 @@
 import express from 'express'
 const router = express.Router()
-import User from '../../../database/models/UserModel.js'
+import UserModel from '../../../database/models/UserModel.js'
 
 
-router.get('/:id', async (req, res, next) => {
+router.get('/', async (req, res, next) => {
   try {
 
-    const users = User.find(req.params.id)
+    //const users = UserModel.find({eq: "name"})
+
+    var users = {
+      name: "sean"
+    }
 
     // handle not found
     if (!users) {
-      const error = new Error()
-      error.httpStatusCode = 404
-      return next(error)
-
+      return next(new Error().message = "user not found")
     }
 
     res.status(200).send(users)
-
   } catch (e) {
     console.error(e)
     next(e)

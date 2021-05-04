@@ -1,5 +1,5 @@
 import {port} from "./config.js";
-import Logger from "./core/logger/logger.js";
+import Logger from "./core/logger.js";
 import app from './app.js'
 
 app.listen(port, () => {

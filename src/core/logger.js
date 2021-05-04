@@ -2,7 +2,7 @@ import pkg from 'winston'
 import fs from 'fs';
 import path from 'path';
 //import DailyRotateFile from 'winston-daily-rotate-file';
-import { environment, logDirectory } from '../../config.js';
+import { environment, logDirectory } from '../config.js';
 const { createLogger, transports, format } = pkg;
 
 let dir = logDirectory;

@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import Logger from '../core/logger/logger.js';
+import Logger from '../core/logger.js';
 import { db } from '../config';
 
 // Build the connection string
