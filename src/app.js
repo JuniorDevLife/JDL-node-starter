@@ -34,7 +34,7 @@ app.use((req, res, next) => {
 app.use((err, req, res, next,) => {
   if (environment === 'development') {
     Logger.error(err);
-    return res.status(500).send(err);
+    return res.status(err.statusCode).send(err.message);
   }
   return res.status(500).send(new Error().message = "Something went seriously wrong :( we are really sorry")
 })
