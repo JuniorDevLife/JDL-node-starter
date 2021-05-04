@@ -8,7 +8,6 @@ router.get('/', async (req, res, next) => {
   try {
 
     //const users = UserModel.find({eq: "name"})
-
     var users = {}
 
     // handle not found
