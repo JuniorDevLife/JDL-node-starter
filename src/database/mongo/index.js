@@ -1,9 +1,6 @@
 import mongoose from 'mongoose';
 import Logger from '../../core/logger.js';
-import {db, mongoURI} from '../../config.js';
-
-// Build the connection string
-//const dbURI = `mongodb+srv://${db.user}:${encodeURIComponent(db.password)}@${db.host}/${db.name}`;
+import {mongoURI} from '../../config.js';
 
 const options = {
   useNewUrlParser: true,
@@ -29,7 +26,7 @@ export const connectToMongoDB = async () => {
 
     // When successfully connected
     mongoose.connection.on('connected', () => {
-      Logger.info('Mongoose default connection open to ' + dbURI);
+      Logger.info('Mongoose default connection open to ' + mongoURI);
     });
 
     // If the connection throws an error
