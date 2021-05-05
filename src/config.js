@@ -11,6 +11,14 @@ export const pgDB = {
   pgPassword: process.env.PGPASSWORD
 }
 
+export const ccDB = {
+  ccPort: process.env.CCPORT,
+  ccHost: process.env.CCHOST,
+  ccUser: process.env.CCUSER,
+  ccDatabase: process.env.CCDATABASE,
+  ccPassword: process.env.CCPASSWORD
+}
+
 // MONGO
 export const mongoURI = process.env.MONGO_URI
 
