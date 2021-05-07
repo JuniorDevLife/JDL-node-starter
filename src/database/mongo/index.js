@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 import Logger from '../../core/logger.js';
-import {mongoURI} from '../../config.js';
+import {mongoURI, mongoDB} from '../../config.js';
 
 const options = {
   useNewUrlParser: true,
@@ -15,18 +15,18 @@ const options = {
   socketTimeoutMS: 45000, // Close sockets after 45 seconds of inactivity
 };
 
-Logger.debug(mongoURI);
+const mongoURL = `mongodb+srv://${mongoDB.mdbUser}:${mongoDB.mdbPassword}@${mongoDB.mdbHost}/${mongoDB.mdbDatabase}?retryWrites=true&w=majority`
 
 // Create the database connection
 // Exported to server.js file and is called into action when server starts
 export const connectToMongoDB = async () => {
   try {
     await mongoose.connect(mongoURI, options)
-    Logger.info('Mongoose connection completed')
+    Logger.info(`Mongo ☁ Cloud Atlas | ${mongoDB.mdbHost} | User: ${mongoDB.mdbUser} | Connection Established ✅`)
 
     // When successfully connected
     mongoose.connection.on('connected', () => {
-      Logger.info('Mongoose default connection open to ' + mongoURI);
+      Logger.info(`Mongoose default open to ${mongoURL}`);
     });
 
     // If the connection throws an error
