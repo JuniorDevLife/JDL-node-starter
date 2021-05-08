@@ -6,8 +6,9 @@
 
 ## About this Open Source Project
 This open-source project is for you(community). Our Team at [JuniorDEV.life](https://juniordev.kufe) has taken this initiative to promote Backend Learning in the best possible way. We are determined to provide quality content for everyone. Let's do it together by learning from this project.
- 
-###The main focus will be to create a maintainable and highly testable architecture.
+
+##The main focus will be to create a maintainable and highly testable architecture.
+
 <br>
 Following are the features of this project:
 * **Separation of concern principle is applied**: Each component has been given a particular role. The role of the components is mutually exclusive. This makes the project easy to be unit tested.
