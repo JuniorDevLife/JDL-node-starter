@@ -11,6 +11,7 @@ export const pgDB = {
   pgPassword: process.env.PGPASSWORD
 }
 
+// COCKROACH LABS DB - POSTGRES INTERFACE
 export const ccDB = {
   ccPort: process.env.CCPORT,
   ccHost: process.env.CCHOST,
@@ -19,7 +20,13 @@ export const ccDB = {
   ccPassword: process.env.CCPASSWORD
 }
 
-// MONGO
+// MONGO ATLAS
+export const mongoDB = {
+  mdbUser: process.env.MDBUSER,
+  mdbPassword: process.env.MDBPASSWORD,
+  mdbHost: process.env.MDBHOST,
+  mdbDatabase: process.env.MDBDATABASE
+}
 export const mongoURI = process.env.MONGO_URI
 
 // CORS
@@ -33,7 +40,6 @@ export const corsUrlDevelopment = process.env.CORS_URL_DEV || "";
 //   issuer: process.env.TOKEN_ISSUER || '',
 //   audience: process.env.TOKEN_AUDIENCE || '',
 // };
-
 
 // DIRECTORIES
 export const logDirectory = process.env.LOG_DIR;
