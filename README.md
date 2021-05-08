@@ -4,7 +4,7 @@
 
 [![JuniorDEV.life](https://img.shields.io/badge/AfterAcademy-opensource-blue.svg)](https://juniorDEV.life) [![Build Status](https://travis-ci.org/afteracademy/nodejs-backend-architecture-typescript.svg?branch=master)](https://travis-ci.org/afteracademy/nodejs-backend-architecture-typescript)
 
-### About this Open Source Project
+## About this Open Source Project
 This open-source project is for you(community). Our Team at [JuniorDEV.life](https://juniordev.kufe) has taken this initiative to promote Backend Learning in the best possible way. We are determined to provide quality content for everyone. Let's do it together by learning from this project.
  
 ###The main focus will be to create a maintainable and highly testable architecture.
@@ -20,7 +20,6 @@ Following are the features of this project:
 * **Unit test is favored**: The tests have been written to test the functions and routes without the need of the database server. Integration tests has also been done but the unit test is favored.
 * **A pure backend project**: We have experienced that when a backend is developed clubbed with a frontend then in the future it becomes really difficult to scale. We would want to create a separate backend project that servers many websites and mobile apps.
 
-### We have also have an open source a complete todo website working with this backend project as a base: [Goto Repository](https://github.com/JuniorDEV-life/JDL-todo-example-monorepo)
 > In the above repository [**React.js Isomorphic Web Application Architecture**] we will learn and build a React web application for a blogging platform using this project as its API server. [Visit demo website](https://demo.react-app-architecture.afteracademy.com)
 
 ### 3RE Architecture: Router, RouteHandler, ResponseHandler, ErrorHandler
