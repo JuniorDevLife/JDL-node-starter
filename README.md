@@ -6,11 +6,9 @@
 
 ## About this Open Source Project
 This open-source project is for you(community). Our Team at [JuniorDEV.life](https://juniordev.kufe) has taken this initiative to promote Backend Learning in the best possible way. We are determined to provide quality content for everyone. Let's do it together by learning from this project.
-
-##The main focus will be to create a maintainable and highly testable architecture.
-
 <br>
-Following are the features of this project:
+
+The main focus will be to create a maintainable and highly testable architecture.
 * **Separation of concern principle is applied**: Each component has been given a particular role. The role of the components is mutually exclusive. This makes the project easy to be unit tested.
 * **Feature encapsulation is adopted**: The files or components that are related to a particular feature have been grouped unless those components are required in multiple features. This enhances the ability to share code across projects.
 * **Centralised Error handling is done**: We have created a framework where all the errors are handled centrally. This reduces the ambiguity in the development when the project grows larger.
