@@ -15,6 +15,7 @@ specifiers:
   multer: ^1.4.2
   nodemon: ^2.0.7
   pg: ^8.6.0
+  prettier: ^2.2.1
   query-to-mongo: ^0.10.1
   sequelize: ^6.6.2
   sequelize-cockroachdb: ^6.0.0-beta.0
@@ -33,6 +34,7 @@ dependencies:
   mongoose: 5.12.7
   multer: 1.4.2
   pg: 8.6.0
+  prettier: 2.2.1
   query-to-mongo: 0.10.1
   sequelize: 6.6.2_pg@8.6.0
   sequelize-cockroachdb: 6.0.0-beta.0_sequelize@6.6.2
@@ -1690,6 +1692,12 @@ packages:
     resolution: {integrity: sha1-6SQ0v6XqjBn0HN/UAddBo8gZ2Jc=}
     engines: {node: '>=4'}
     dev: true
+
+  /prettier/2.2.1:
+    resolution: {integrity: sha512-PqyhM2yCjg/oKkFPtTGUojv7gnZAoG80ttl45O6x2Ug/rMJw4wcc9k6aaf2hibP7BGVCCM33gZoGjyvt9mm16Q==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: false
 
   /process-nextick-args/2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
