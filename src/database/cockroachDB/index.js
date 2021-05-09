@@ -1,4 +1,4 @@
-import Logger from '../../core/logger.js'
+import Logger from '../../core/loggerHandler.js'
 import {Sequelize} from "sequelize-cockroachdb"
 import {ccDB} from "../../config.js"
 import {StudentModel} from './models/StudentModel.js'

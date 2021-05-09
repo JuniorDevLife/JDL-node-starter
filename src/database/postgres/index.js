@@ -1,5 +1,5 @@
 import pg from 'pg'
-import Logger from '../../core/logger.js';
+import Logger from '../../core/loggerHandler.js';
 import {Sequelize} from 'sequelize'
 import {pgDB} from "../../config.js";
 

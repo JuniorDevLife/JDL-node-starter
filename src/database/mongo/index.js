@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import Logger from '../../core/logger.js';
+import Logger from '../../core/loggerHandler.js';
 import {mongoURI, mongoDB} from '../../config.js';
 
 const options = {

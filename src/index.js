@@ -1,5 +1,5 @@
 import {port} from "./config.js";
-import Logger from "./core/logger.js";
+import Logger from "./core/loggerHandler.js";
 import app from './app.js'
 import {connectToMongoDB} from "./database/mongo/index.js"
 

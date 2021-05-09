@@ -1,10 +1,10 @@
 import express from 'express'
 import bodyParser from "body-parser";
-import Logger from './core/logger.js'
+import Logger from './core/loggerHandler.js'
 import listEndpoints from 'express-list-endpoints'
 import {corsHandler} from "./core/corsHandler.js";
 import {NotFoundError} from "./core/apiErrors.js";
-import {globalErrorHandler} from './core/errorHandler.js'
+import {errorHandler} from './core/errorHandler.js'
 import routesV1 from './routes/v1/index.js';
 
 // node process start error check
@@ -28,7 +28,7 @@ app.use((req, res, next) => {
 })
 
 // ERROR HANDLERS
-app.use(globalErrorHandler)
+app.use(errorHandler)
 
 console.log(listEndpoints(app))
 
